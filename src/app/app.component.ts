@@ -15,9 +15,9 @@ export class AppComponent {
   constructor(private dialog : MatDialog){
 
   }
-  openDialog() {
+  openDialog() {  
     this.dialog.open(DialogComponent, {
-      width : '30%',
+      width : '40%',
       
     });
   }
