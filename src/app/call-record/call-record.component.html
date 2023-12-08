@@ -33,8 +33,43 @@
                 <td>{{item.Listener}}</td>
             </tr>
         </tbody>
-
     </table>
+    <h1>Schedule Notes</h1>
+    <div class="row">
+        <label for=""><h1>Date of Conversation</h1></label>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+    </div>
+    <label for=""><h1>Minutes</h1></label>
+    <input type="text" name="name" placeholder="Number of minutes" size="10" />
+    
+    <label for=""><h1>1.What has this course been about for you? What did you get enrolled in when you registered?</h1></label>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <label for=""><h1>1.What has this course been about for you? What did you get enrolled in when you registered?</h1></label>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <label for=""><h1>2.What have you seen about that so far?</h1></label>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <label for=""><h1>3.What [else] do you want to say about what a openned up for you since the course started?</h1></label>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+    <label for=""><h1>4.What relationships did you choose to focus on for the duration of this course?</h1></label>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <input matInput placeholder="" value="">
+    </mat-form-field>
+
     
 </div>
 <div mat-dialog-action>
