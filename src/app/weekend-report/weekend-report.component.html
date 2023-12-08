@@ -1,7 +1,7 @@
-<div mat-dialog-title>
+<div mat-dialog-title style="width: 100%">
     <h2>What Could Happen Form</h2>
     <h1>Developmental Course on Relating and Relationships</h1>
-    <h1 color="red">Note: This form auto saves every 30 seconds</h1>
+    <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
 </div>
 <div mat-dialog-content>
     <mat-form-field appearance="outline">
@@ -37,4 +37,8 @@
         <input matInput placeholder="" value="">
     </mat-form-field>
 </div>
-<div mat-dialog-action></div>
+<div  mat-dialog-actions >
+    <button mat-raised-button color="success">Save</button>
+    <button mat-raised-button color="warn">Cancel</button>
+    <button mat-raised-button color="primary">Edit</button>
+</div>
