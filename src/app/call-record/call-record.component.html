@@ -1,8 +1,6 @@
 <div  mat-dialog-title>
     <h1>2023 Course Partner call</h1>
     <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
-</div>
-<div mat-dialog-content>
     <table>
         <thead>
             <tr>
@@ -36,54 +34,60 @@
         </tbody>
     </table>
     <h1>Schedule Notes</h1>
-    <div class="row">
-        <label for=""><h1>Date of Conversation</h1></label>
-        <mat-form-field appearance="outline">
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-hint>MM/DD/YYYY</mat-hint>
-            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-
-    </div>
-    <label for=""><h1>Minutes</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>    
-    <label for=""><h1>1.What has this course been about for you? What did you get enrolled in when you registered?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>2.What have you seen about that so far?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>3.What [else] do you want to say about what a openned up for you since the course started?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>4.What relationships did you choose to focus on for the duration of this course?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>5.Is there anything else I can provide or do for you at this point ?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>Is there anything you would like Tobin, Owen and Sarasai know?[What was spoken in thier words!]</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="">
-    </mat-form-field>
-    <label for=""><h1>Course Partner comments[What did you learn or see about being  a listener? Anything else?, What do you want Tobin, Owen and Sarasai to know about the conversation]</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="Required for completion" value="">
-    </mat-form-field>
-
+</div>
+<form [formGroup]="callRecord" onsubmit="onFormSubmit()">
+<div mat-dialog-content>  
+        <div class="row">
+            <label for=""><h1>Date of Conversation</h1></label>
+            <mat-form-field appearance="outline">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
     
-</div>
-<div mat-dialog-action>
-    <button mat-raised-button color="success">Save</button>
-    <button mat-raised-button color="warn">Cancel</button>
-    <button mat-raised-button color="primary">Edit</button>
-</div>
+        </div>
+        <label for=""><h1>Minutes</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionOne">
+        </mat-form-field>    
+        <label for=""><h1>1.What has this course been about for you? What did you get enrolled in when you registered?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionTwo">
+        </mat-form-field>
+        <label for=""><h1>2.What have you seen about that so far?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionThree">
+        </mat-form-field>
+        <label for=""><h1>3.What [else] do you want to say about what a openned up for you since the course started?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionFour">
+        </mat-form-field>
+        <label for=""><h1>4.What relationships did you choose to focus on for the duration of this course?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionFive">
+        </mat-form-field>
+        <label for=""><h1>5.Is there anything else I can provide or do for you at this point ?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionSix">
+        </mat-form-field>
+        <label for=""><h1>Is there anything you would like Tobin, Owen and Sarasai know?[What was spoken in thier words!]</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="" value="" formControlName="questionSeven">
+        </mat-form-field>
+        <label for=""><h1>Course Partner comments[What did you learn or see about being  a listener? Anything else?, What do you want Tobin, Owen and Sarasai to know about the conversation]</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput type="text" placeholder="Required for completion" value="" formControlName="questionEight">
+        </mat-form-field>
+    
+        
+    </div>
+    <div mat-dialog-action>
+        <button mat-raised-button color="success">Save</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="primary">Edit</button>
+    </div>
+</form>
+    
+    
