@@ -18,12 +18,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WeekendReportComponent } from './weekend-report/weekend-report.component';
-
+import { CallRecordComponent } from './call-record/call-record.component';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [ 
     AppComponent,
     DialogComponent,
-    WeekendReportComponent
+    WeekendReportComponent,
+    CallRecordComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { WeekendReportComponent } from './weekend-report/weekend-report.componen
     MatDatepickerModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

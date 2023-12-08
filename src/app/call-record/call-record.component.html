@@ -1,0 +1,44 @@
+<div  mat-dialog-title>
+    <h1>2023 Course Partner call</h1>
+</div>
+<div mat-dialog-content>
+    <table>
+        <thead>
+            <tr>
+                <th>Name:</th>
+                <th>Email:</th>
+                <th>Phone:</th>
+                <th>SkypeID:</th>
+                <th>WhatsApp ID:</th>
+                <th>Timezone</th>
+                <th>Country</th>
+                <th>Best Times</th>
+                <th>Prefered method</th>
+                <th>Forum</th>
+                <th>Listener</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{item.Name}}</td>
+                <td>{{item.Email}}</td>
+                <td>{{item.Phone}}</td>
+                <td>{{item.SkypeID}}</td>
+                <td>{{item.WhatsAppID}}</td>
+                <td>{{item.Timezone}}</td>
+                <td>{{item.Country}}</td>
+                <td>{{item.BestTime}}</td>
+                <td>{{item.Preferedmethod}}</td>
+                <td>{{item.Forum}}</td>
+                <td>{{item.Listener}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</div>
+<div mat-dialog-action>
+    <button mat-raised-button color="success">Save</button>
+    <button mat-raised-button color="warn">Cancel</button>
+    <button mat-raised-button color="primary">Edit</button>
+</div>
