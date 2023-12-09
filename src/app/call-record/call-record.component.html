@@ -1,41 +1,41 @@
-<div  mat-dialog-title>
-    <h1>2023 Course Partner call</h1>
-    <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name:</th>
-                <th>Email:</th>
-                <th>Phone:</th>
-                <th>SkypeID:</th>
-                <th>WhatsApp ID:</th>
-                <th>Timezone</th>
-                <th>Country</th>
-                <th>Best Times</th>
-                <th>Prefered method</th>
-                <th>Forum</th>
-                <th>Listener</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of data">
-                <td>{{item.Name}}</td>
-                <td>{{item.Email}}</td>
-                <td>{{item.Phone}}</td>
-                <td>{{item.SkypeID}}</td>
-                <td>{{item.WhatsAppID}}</td>
-                <td>{{item.Timezone}}</td>
-                <td>{{item.Country}}</td>
-                <td>{{item.BestTime}}</td>
-                <td>{{item.Preferedmethod}}</td>
-                <td>{{item.Forum}}</td>
-                <td>{{item.Listener}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>Schedule Notes</h1>
-</div>
-<form [formGroup]="callRecord" (ngsubmit)="onFormSubmit()">
+    <div  mat-dialog-title>
+        <h1>2023 Course Partner call</h1>
+        <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Phone:</th>
+                    <th>SkypeID:</th>
+                    <th>WhatsApp ID:</th>
+                    <th>Timezone</th>
+                    <th>Country</th>
+                    <th>Best Times</th>
+                    <th>Prefered method</th>
+                    <th>Forum</th>
+                    <th>Listener</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data">
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Email}}</td>
+                    <td>{{item.Phone}}</td>
+                    <td>{{item.SkypeID}}</td>
+                    <td>{{item.WhatsAppID}}</td>
+                    <td>{{item.Timezone}}</td>
+                    <td>{{item.Country}}</td>
+                    <td>{{item.BestTime}}</td>
+                    <td>{{item.Preferedmethod}}</td>
+                    <td>{{item.Forum}}</td>
+                    <td>{{item.Listener}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Schedule Notes</h1> -->
+    </div> 
+    <form [formGroup]="callRecordForm" (ngsubmit)="onFormSubmit()">
     <div mat-dialog-content>  
         <mat-form-field class="example-full-width">
             <mat-label>Choose a date</mat-label>
@@ -47,9 +47,9 @@
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
             
-            <label for="minutes">Minutes:
-                <textarea id="minutes" name="minutes" rows="2" cols="33" formControlName="minutes"></textarea>    
-            </label>         
+        <label for="minutes">Minutes:
+            <input matInput type="number" id="minutes" name="minutes" rows="2" cols="100" formControlName="minutes" />  
+        </label>         
             
             <!-- <form>
                 <label for="message">Your Message:</label>
@@ -58,29 +58,29 @@
             <!-- <mat-form-field class="example-full-width" appearance="outline">
                 <input matInput placeholder="" value="" formControlName="minutes">
             </mat-form-field>   -->
-            <label for="questionone">What did you get enrolled in when you registered?</label>
-            <textarea   id="questionone" name="questionone" rows="2" cols="33" formControlName="questionOne"></textarea> 
-            <label for="questiontwo">What has this course been about for you? What did you get enrolled in when you registered?</label>
-            <textarea  id="questiontwo" name="questiontwo" rows="2" cols="33" formControlName="questionTwo"></textarea>
-            <label for="questionthree">What have you seen about that so far?</label>
-            <textarea  id="questionthree" name="questionthree" rows="2" cols="33" formControlName="questionThree"></textarea>
-            <label for="questionfour">What [else] do you want to say about what a openned up for you since the course started?</label>
-            <textarea  id="questionfour" name="questionfour" rows="2" cols="33" formControlName="questionFour"></textarea>
-            <label for="questionfive">What relationships did you choose to focus on for the duration of this course?</label>
-            <textarea  id="questionfive" name="questionfive" rows="2" cols="33" formControlName="questionFive"></textarea>
-            <label for="questionsix">Is there anything else I can provide or do for you at this point ?</label>
-            <textarea  id="questionsix" name="questionsix" rows="2" cols="33" formControlName="questionSix"></textarea>
-            <label for="questionseven" >Is there anything you would like Tobin, Owen and Sarasai know?[What was spoken in thier words!]</label>
-            <textarea  id="questionseven" name="questionseven" rows="2" cols="33" formControlName="questionSeven"></textarea>
-            <label for="questioneight">Course Partner comments[What did you learn or see about being  a listener? Anything else?, What do you want Tobin, Owen and Sarasai to know about the conversation]</label>
-            <textarea  id="questioneight" name="questioneight" rows="2" cols="33" formControlName="questionEight"></textarea>    
+        <label for="questionone">What did you get enrolled in when you registered?</label>
+        <textarea   id="questionone" name="questionone" rows="2" cols="33" formControlName="questionOne"> 
+        <label for="questiontwo">What has this course been about for you? What did you get enrolled in when you registered?</label>
+        <textarea  id="questiontwo" name="questiontwo" rows="2" cols="33" formControlName="questionTwo"></textarea>
+        <label for="questionthree">What have you seen about that so far?</label>
+        <textarea  id="questionthree" name="questionthree" rows="2" cols="33" formControlName="questionThree"></textarea>
+        <label for="questionfour">What [else] do you want to say about what a openned up for you since the course started?</label>
+        <textarea  id="questionfour" name="questionfour" rows="2" cols="33" formControlName="questionFour"></textarea>
+        <label for="questionfive">What relationships did you choose to focus on for the duration of this course?</label>
+        <textarea  id="questionfive" name="questionfive" rows="2" cols="33" formControlName="questionFive"></textarea>
+        <label for="questionsix">Is there anything else I can provide or do for you at this point ?</label>
+        <textarea  id="questionsix" name="questionsix" rows="2" cols="33" formControlName="questionSix"></textarea>
+        <label for="questionseven" >Is there anything you would like Tobin, Owen and Sarasai know?[What was spoken in thier words!]</label>
+        <textarea  id="questionseven" name="questionseven" rows="2" cols="33" formControlName="questionSeven"></textarea>
+        <label for="questioneight">Course Partner comments[What did you learn or see about being  a listener? Anything else?, What do you want Tobin, Owen and Sarasai to know about the conversation]</label>
+        <textarea  id="questioneight" name="questioneight" rows="2" cols="33" formControlName="questionEight"></textarea>    
         
-        </div>
-        <div mat-dialog-action>
-            <button mat-raised-button color="success" type="submit">Save</button>
-            <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
-            <button mat-raised-button color="primary">Edit</button>
-        </div>
-</form>
+    </div>
+    <div mat-dialog-action>
+        <button mat-raised-button color="primary" type="submit">Save</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="primary">Edit</button>
+    </div>
+    </form>
     
     

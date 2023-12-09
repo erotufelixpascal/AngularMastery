@@ -7,15 +7,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./call-record.component.scss']
 })
 export class CallRecordComponent {
-  callRecord: FormGroup
+  callRecordForm: FormGroup;
 
-  data =[
-    {Name:"Stefan", Email:'stefan.heinz@gmail.com', Phone:'+1-46363-6464', SkypeID:'',WhatsAppID:'', Timezone:'MountainTime',Country:'United States',BestTime:'Various',Preferedmethod:'email',Forum:'Yes,07/1997,Munich,David Norris',Listener:'Stelan Heinz'},
+  // data =[
+  //   {Name:"Stefan", Email:'stefan.heinz@gmail.com', Phone:'+1-46363-6464', SkypeID:'',WhatsAppID:'', Timezone:'MountainTime',Country:'United States',BestTime:'Various',Preferedmethod:'email',Forum:'Yes,07/1997,Munich,David Norris',Listener:'Stelan Heinz'},
     
-  ];
+  // ];
 
   constructor(private _fb: FormBuilder) {
-    this.callRecord = this._fb.group({
+    this.callRecordForm = this._fb.group({
       minutes:'',
       questionOne :'',
       questionTwo :'',
@@ -32,8 +32,8 @@ export class CallRecordComponent {
     });
   }
   onFormSubmit(){
-    if(this.callRecord.valid){
-      console.log(this.callRecord.value);
+    if(this.callRecordForm.valid){
+      console.log(this.callRecordForm.value);
     }
   }
 
