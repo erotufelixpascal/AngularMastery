@@ -39,8 +39,9 @@ export class CallRecordComponent implements OnInit {
     });
   }
 
-  onFormSubmit() {
+  onFormSubmit(event: Event) {
     if (this.callRecordForm.valid) {
+      event.preventDefault();
       console.log('Form submitted:', this.callRecordForm.value);
     }
   }
