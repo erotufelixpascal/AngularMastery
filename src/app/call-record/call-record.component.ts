@@ -33,16 +33,17 @@ export class CallRecordComponent implements OnInit {
       questionFive: [''],
       questionSix: [''],
       questionSeven: [''],
-      questionEight: [''],
-      questionNine: [''],
-      questionTen: ['']
+      questionEight: ['']
+      
     });
   }
 
   onFormSubmit(event: Event) {
-    if (this.callRecordForm.valid) {
-      event.preventDefault();
+    // if (this.callRecordForm.valid) {
+    //   event.preventDefault();
+    //   console.log('Form submitted:', this.callRecordForm.value);
+    // }
+    event.preventDefault();
       console.log('Form submitted:', this.callRecordForm.value);
-    }
   }
 }

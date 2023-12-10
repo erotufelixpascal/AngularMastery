@@ -2,10 +2,10 @@
         <h1>2023 Course Partner call</h1>
         <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
     </div> 
-    <form [formGroup]="callRecordForm" (ngSubmit)="onFormSubmit()">
+    <form [formGroup]="callRecordForm" (ngSubmit)="onFormSubmit($event)">
     <div mat-dialog-content class="form-container">  
         <label for="name">Name:
-            <input matInput type="text" id="name" name="name"  formControlName="minutes" />  
+            <input matInput type="text" id="name" name="name"  formControlName="name" />  
         </label>
         <label for="email">Email:
             <input matInput type="text" id="email" name="email"  formControlName="email" />  
@@ -26,7 +26,7 @@
             <input matInput type="text" id="country" name="country"  formControlName="country" />  
         </label>
         <label for="besttimes">Best Times:
-            <input matInput type="text" id="besttimes" name="nabesttimesme"  formControlName="bestTimes" />  
+            <input matInput type="text" id="besttimes" name="besttimes"  formControlName="bestTimes" />  
         </label>
         <label for="Preferedmethod">Prefered method:
             <input matInput type="text" id="Preferedmethod" name="Preferedmethod"  formControlName="preferedMethod" />  
@@ -40,7 +40,7 @@
         
         <mat-form-field  style="width: 30%;">
             <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
+            <input matInput [matDatepicker]="picker" formControlName="chosenDate">
             <mat-hint>MM/DD/YYYY</mat-hint>
             <mat-datepicker-toggle matIconSuffix [for]="picker">
             <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
