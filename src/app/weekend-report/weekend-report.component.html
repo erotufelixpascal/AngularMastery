@@ -5,7 +5,7 @@
 </div>
 <form [formGroup]="weekendReportForm" (ngSubmit)="onFormSubmit($event)">
 <div mat-dialog-content>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" style="width: 30%;">
         <mat-label>Select a Weekend</mat-label>
         <mat-select formControlName="weekendDate">          
           <mat-option value="option1">October 15, 2023 - October 18, 2023</mat-option>
