@@ -19,18 +19,18 @@ export class AppComponent {
   }
   openDialog() {  
     this.dialog.open(DialogComponent, {
-      width : '40%',
+      width : '60%',
       
     });
   }
   openWeek(){
     this.dialog.open(WeekendReportComponent, {
-      width : '40%',
+      width : '60%',
     });
   }
   openCallRecord(){
     this.dialog.open(CallRecordComponent, {
-      width : '40%',
+      width : '60%',
     });
   }
 

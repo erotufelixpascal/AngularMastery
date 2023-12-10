@@ -1,42 +1,43 @@
-    <div  mat-dialog-title>
+    <div  mat-dialog-title class="form-container">
         <h1>2023 Course Partner call</h1>
         <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
-        <!-- <table>
-            <thead>
-                <tr>
-                    <th>Name:</th>
-                    <th>Email:</th>
-                    <th>Phone:</th>
-                    <th>SkypeID:</th>
-                    <th>WhatsApp ID:</th>
-                    <th>Timezone</th>
-                    <th>Country</th>
-                    <th>Best Times</th>
-                    <th>Prefered method</th>
-                    <th>Forum</th>
-                    <th>Listener</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let item of data">
-                    <td>{{item.Name}}</td>
-                    <td>{{item.Email}}</td>
-                    <td>{{item.Phone}}</td>
-                    <td>{{item.SkypeID}}</td>
-                    <td>{{item.WhatsAppID}}</td>
-                    <td>{{item.Timezone}}</td>
-                    <td>{{item.Country}}</td>
-                    <td>{{item.BestTime}}</td>
-                    <td>{{item.Preferedmethod}}</td>
-                    <td>{{item.Forum}}</td>
-                    <td>{{item.Listener}}</td>
-                </tr>
-            </tbody>
-        </table>
-        <h1>Schedule Notes</h1> -->
     </div> 
     <form [formGroup]="callRecordForm" (ngsubmit)="onFormSubmit()">
-    <div mat-dialog-content>  
+    <div mat-dialog-content class="form-container">  
+        <label for="name">Name:
+            <input matInput type="text" id="name" name="name" rows="2" cols="100" formControlName="minutes" />  
+        </label>
+        <label for="email">Email:
+            <input matInput type="text" id="email" name="email" rows="2" cols="100" formControlName="email" />  
+        </label>
+        <label for="skypeid">SkypeID:
+            <input matInput type="text" id="skypeid" name="skypeid" rows="2" cols="100" formControlName="skypeid" />  
+        </label>
+        <label for="phone">Phone:
+            <input matInput type="text" id="phone" name="phone" rows="2" cols="100" formControlName="phone" />  
+        </label>
+        <label for="WhatsAppID">WhatsApp ID:
+            <input matInput type="text" id="WhatsAppID" name="WhatsAppID" rows="2" cols="100" formControlName="WhatsAppID" />  
+        </label>
+        <label for="timezone">Timezone:
+            <input matInput type="text" id="timezone" name="timezone" rows="2" cols="100" formControlName="timezone" />  
+        </label>
+        <label for="country">Country:
+            <input matInput type="text" id="country" name="country" rows="2" cols="100" formControlName="country" />  
+        </label>
+        <label for="besttimes">Best Times:
+            <input matInput type="text" id="besttimes" name="nabesttimesme" rows="2" cols="100" formControlName="besttimes" />  
+        </label>
+        <label for="Preferedmethod">Prefered method:
+            <input matInput type="text" id="Preferedmethod" name="Preferedmethod" rows="2" cols="100" formControlName="Preferedmethod" />  
+        </label>
+        <label for="forum">Forum:
+            <input matInput type="text" id="forum" name="forum" rows="2" cols="100" formControlName="forum" />  
+        </label>
+        <label for="listener">Listener:
+            <input matInput type="text" id="listener" name="listener" rows="2" cols="100" formControlName="listener" />  
+        </label>
+        
         <mat-form-field class="example-full-width">
             <mat-label>Choose a date</mat-label>
             <input matInput [matDatepicker]="picker">
@@ -59,7 +60,7 @@
                 <input matInput placeholder="" value="" formControlName="minutes">
             </mat-form-field>   -->
         <label for="questionone">What did you get enrolled in when you registered?</label>
-        <textarea   id="questionone" name="questionone" rows="2" cols="33" formControlName="questionOne"> 
+        <textarea   id="questionone" name="questionone" rows="2" cols="33" formControlName="questionOne"> </textarea>
         <label for="questiontwo">What has this course been about for you? What did you get enrolled in when you registered?</label>
         <textarea  id="questiontwo" name="questiontwo" rows="2" cols="33" formControlName="questionTwo"></textarea>
         <label for="questionthree">What have you seen about that so far?</label>
@@ -76,8 +77,8 @@
         <textarea  id="questioneight" name="questioneight" rows="2" cols="33" formControlName="questionEight"></textarea>    
         
     </div>
-    <div mat-dialog-action>
-        <button mat-raised-button color="primary" type="submit">Save</button>
+    <div mat-dialog-action class="form-container">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
         <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
         <button mat-raised-button color="primary">Edit</button>
     </div>
