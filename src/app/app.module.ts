@@ -20,12 +20,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WeekendReportComponent } from './weekend-report/weekend-report.component';
 import { CallRecordComponent } from './call-record/call-record.component';
 import {MatTableModule} from '@angular/material/table';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [ 
     AppComponent,
     DialogComponent,
     WeekendReportComponent,
-    CallRecordComponent
+    CallRecordComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
