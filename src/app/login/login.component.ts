@@ -23,8 +23,10 @@ export class LoginComponent implements OnInit{
  
 
   login(event:Event){
+    if(this.loginForm.valid){
     event.preventDefault();
     console.log(this.loginForm.value);
+    }
 
   }
   onSubmit(event:Event){

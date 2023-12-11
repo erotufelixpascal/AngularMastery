@@ -1,6 +1,6 @@
 <div class="login-container">
     <h2>Login</h2>
-    <form [formGroup]="loginForm"  (ngSubmit)="onSubmit($event)">
+    <form [formGroup]="loginForm"  (ngSubmit)="login($event)">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" formControlName="username">
   
@@ -10,7 +10,7 @@
       <div class="example-button-row">
         <button mat-raised-button type="submit">Login</button>
         <button mat-raised-button color="accent" type="submit">Login</button>
-        <button mat-raised-button color="primary" type="submit" >SignIn</button>
+        <button mat-raised-button color="primary"  >SignIn</button>
         
         
       </div>
