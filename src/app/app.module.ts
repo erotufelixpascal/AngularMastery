@@ -22,6 +22,7 @@ import { CallRecordComponent } from './call-record/call-record.component';
 import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SignOutComponent } from './sign-out/sign-out.component';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -29,7 +30,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     WeekendReportComponent,
     CallRecordComponent,
     LoginComponent,
-    SignInComponent
+    SignInComponent,
+    SignOutComponent
   ],
   imports: [
     BrowserModule,
