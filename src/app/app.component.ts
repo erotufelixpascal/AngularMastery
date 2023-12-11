@@ -7,10 +7,15 @@ import { CallRecordComponent } from './call-record/call-record.component';
 import { LoginComponent } from './login/login.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { Routes, RouterLink,RouterOutlet,RouterLinkActive  } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-root',
+  //imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  //standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
