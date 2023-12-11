@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit{
 
   login(event:Event){
     event.preventDefault();
-    console.log('this.login.value');
+    console.log(this.loginForm.value);
 
   }
 

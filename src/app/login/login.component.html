@@ -2,10 +2,10 @@
     <h2>Login</h2>
     <form [formGroup]="loginForm"  (ngSubmit)="login($event)">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" >
+      <input type="text" id="username" name="username" formControlName="username">
   
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" >
+      <input type="password" id="password" name="password" formControlName="password" >
   
       <div class="example-button-row">
         <button mat-raised-button type="submit">Login</button>
