@@ -4,6 +4,7 @@ import {MatDialog, MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dia
 import { DialogComponent } from './dialog/dialog.component';
 import { WeekendReportComponent } from './weekend-report/weekend-report.component';
 import { CallRecordComponent } from './call-record/call-record.component';
+import { LoginComponent } from './login/login.component';
 
 
 @Component({
@@ -32,6 +33,11 @@ export class AppComponent {
     this.dialog.open(CallRecordComponent, {
       width : '60%',
     });
+  }
+  login(){
+    this.dialog.open(LoginComponent,{
+      width: '30%',
+    })
   }
 
 }
