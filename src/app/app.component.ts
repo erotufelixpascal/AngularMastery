@@ -5,6 +5,8 @@ import { DialogComponent } from './dialog/dialog.component';
 import { WeekendReportComponent } from './weekend-report/weekend-report.component';
 import { CallRecordComponent } from './call-record/call-record.component';
 import { LoginComponent } from './login/login.component';
+import { SignOutComponent } from './sign-out/sign-out.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @Component({
@@ -36,6 +38,17 @@ export class AppComponent {
   }
   login(){
     this.dialog.open(LoginComponent,{
+      width: '30%',
+    })
+  }
+  signOut(){
+    this.dialog.open(SignOutComponent,{
+      width:'30'
+
+    })
+  }
+  signIn(){
+    this.dialog.open(SignInComponent, {
       width: '30%',
     })
   }
