@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit{
   }
   onSubmit(event:Event){
     if(this.loginForm.valid){
+      event.preventDefault();
       this.router.navigate(["/signIn"]);
     }
 
