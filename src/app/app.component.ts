@@ -15,7 +15,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular13CRUD';
+  title = 'WisdomCourses';
 
   constructor(private dialog : MatDialog){
 
