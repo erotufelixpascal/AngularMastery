@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  'username':'';
+  'password':'';
+
+  // constructor(private, ){}
+
+  login(event:Event){
+    console.log('this.login.value');
+
+  }
 
 }

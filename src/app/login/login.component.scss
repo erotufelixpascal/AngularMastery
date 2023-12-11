@@ -4,7 +4,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 50px;
+    margin: 50px;
   }
   
   form {
@@ -31,4 +31,12 @@
     border-radius: 3px;
     cursor: pointer;
   }
+  .example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-disabled {
+  display: inline-block;
+}
   
