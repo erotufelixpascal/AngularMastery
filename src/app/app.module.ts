@@ -21,13 +21,15 @@ import { WeekendReportComponent } from './weekend-report/weekend-report.componen
 import { CallRecordComponent } from './call-record/call-record.component';
 import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 @NgModule({
   declarations: [ 
     AppComponent,
     DialogComponent,
     WeekendReportComponent,
     CallRecordComponent,
-    LoginComponent
+    LoginComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
