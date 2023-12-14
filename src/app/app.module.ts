@@ -23,6 +23,8 @@ import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -31,7 +33,8 @@ import { SignOutComponent } from './sign-out/sign-out.component';
     CallRecordComponent,
     LoginComponent,
     SignInComponent,
-    SignOutComponent
+    SignOutComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { SignOutComponent } from './sign-out/sign-out.component';
     MatNativeDateModule,
     ReactiveFormsModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

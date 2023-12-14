@@ -9,6 +9,7 @@ import { SignOutComponent } from './sign-out/sign-out.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { Routes, RouterLink,RouterOutlet,RouterLinkActive  } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 
@@ -54,7 +55,12 @@ export class AppComponent {
   }
   signIn(){
     this.dialog.open(SignInComponent, {
-      width: '30%',
+      width: '30%'
+    })
+  }
+  homePage(){
+    this.dialog.open(HomePageComponent, {
+      width:'100%'
     })
   }
 
