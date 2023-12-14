@@ -39,16 +39,14 @@
   <div class="column">
     
     <h1>Relationships</h1>
-    <mat-list role="list" >
-      <!-- *ngFor="let relations of relationships" value=[relations] -->
+    <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>
+           
+      <mat-list-item role="listitem">{{relations}}</mat-list-item>
       
-      <mat-list-item role="listitem">Frank</mat-list-item>
-      <mat-list-item role="listitem">Mary</mat-list-item>
-      <mat-list-item role="listitem">Jane</mat-list-item>
     </mat-list>
-    
   </div>
-  <!--SecondRow-->
+  <div>
+    <!--SecondRow-->
   <!-- <div class="row1">
     <div class="column2">
       
@@ -96,3 +94,6 @@
     
   </div>
    -->
+
+  </div>
+  

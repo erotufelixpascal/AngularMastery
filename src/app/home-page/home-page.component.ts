@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
   Surveys =["December", "October" , "November"];
+  Relationships =["Richard", "Jane" , "Peace" , "Tom" , "Foster"]
 
   
 
