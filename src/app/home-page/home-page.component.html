@@ -6,10 +6,10 @@
     <span>Wisdom Course</span>
     <span class="example-spacer"></span>
       <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
-      <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button>
-      <button mat-raised-button color="accent" (click)="openCallRecord()">Make a call</button> -->
-      <button mat-raised-button color="primary" (click)="login()">login</button> 
-      <button mat-raised-button color="accent" >SignOut</button>
+      <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
+      <button mat-raised-button color="" (click)="logout()">LogOut</button> 
+      <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button> 
+      <button mat-raised-button color="accent" >DCRR2024</button>
 
   </mat-toolbar>
 

@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
   Surveys =["December", "October" , "November"];
-  Relationships =["Richard", "Jane" , "Peace" , "Tom" , "Foster"]
-  Links=["Your Landmark Account","DCR&R on the website","Zoom setup test","other links 1","other links 2"]
-  Files=["Document 1","Document 2","Document 3"]
+  Relationships =["Richard", "Jane" , "Peace" , "Tom" , "Foster"];
+  Links=["Your Landmark Account","DCR&R on the website","Zoom setup test","other links 1","other links 2"];
+  Files=["Document 1","Document 2","Document 3"];
+  users=["Felix P"]
 
-  login(){
+  logout(){
     width:'100%'
   }
 
