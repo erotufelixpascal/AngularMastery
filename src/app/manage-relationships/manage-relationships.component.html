@@ -7,7 +7,7 @@
     <p>To update the name of a relationship, click <b>Edit</b> on their line</p>
 
     <h1>Current Relationships(max 20)</h1>
-    <table *ngFor="let relationship of Relationships" value=[relationship]>
+    <table >
         
         <thead>
         <tr>
@@ -21,11 +21,11 @@
         </tr>
         </thead>
         <tbody>
-            <tr>
-            <td>{{relationship.Name}}</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <tr *ngFor="let relationship of Relationships" value=[relationship]>
+            <td>{{relationship.name}}</td>
+            <td>{{relationship.Relationshipfor}}</td>
+            <td>{{relationship.Active}}</td>
+            <td>{{relationship.order}}</td>
             <td><button mat-raised-button color="primary" type="submit">Edit</button></td>
             <td><button mat-raised-button color="primary" mat-dialog-close>Mark inactive</button></td>
             <td><button mat-raised-button color="warn">Remove</button></td>
