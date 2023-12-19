@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class ManageRelationshipsComponent {
   
   Relationships =[
-    {name:"Richard",Relationshipfor:"Landmark",Active:"Yes",order:"1"},
-    {name:"Jane",Relationshipfor:"Home",Active:"No",order:"2"},
-    {name:"Peace",Relationshipfor:"School",Active:"Yes",order:"3"},
-    {name:"Emily",Relationshipfor:"Neighbourhood",Active:"No",order:"4"},
-    {name:"Foster",Relationshipfor:"Gym",Active:"Yes",order:"5"},
-    {name:"Felix",Relationshipfor:"Work",Active:"No",order:"6"},
-    {name:"Kris",Relationshipfor:"Landmark",Active:"Yes",order:"7"},
+    {id:"1",name:"Richard",Relationshipfor:"Landmark",Active:"Yes",order:"1"},
+    {id:"2",name:"Jane",Relationshipfor:"Home",Active:"No",order:"2"},
+    {id:"3",name:"Peace",Relationshipfor:"School",Active:"Yes",order:"3"},
+    {id:"4",name:"Emily",Relationshipfor:"Neighbourhood",Active:"No",order:"4"},
+    {id:"5",name:"Foster",Relationshipfor:"Gym",Active:"Yes",order:"5"},
+    {id:"6",name:"Felix",Relationshipfor:"Work",Active:"No",order:"6"},
+    {id:"7",name:"Kris",Relationshipfor:"Landmark",Active:"Yes",order:"7"},
   ]
 
 }
