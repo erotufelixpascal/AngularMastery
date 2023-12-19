@@ -10,10 +10,17 @@ export class HomePageComponent {
   Relationships =["Richard", "Jane" , "Peace" , "Tom" , "Foster"];
   Links=["Your Landmark Account","DCR&R on the website","Zoom setup test","other links 1","other links 2"];
   Files=["Document 1","Document 2","Document 3"];
-  users=["Felix P"]
+  users=["Felix P"];
 
-  logout(){
-    width:'100%'
-  }
+  survey =[
+    {Month:"",date1:"", date2:"",date3:"" , date4:"", date5:""},
+    {Month:"",date1:"", date2:"",date3:"" , date4:"", date5:""},
+    {Month:"",date1:"", date2:"",date3:"" , date4:"", date5:""},
+    {Month:"",date1:"", date2:"",date3:"" , date4:"", date5:""},
+    {Month:"",date1:"", date2:"",date3:"" , date4:"", date5:""},
+  ]
+
+
+  
 
 }
