@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./manage-relationships.component.scss']
 })
 export class ManageRelationshipsComponent {
+  Relationships =["Richard", "Jane" , "Peace" , "Tom" , "Foster", "Felix"];
 
 }

@@ -7,7 +7,8 @@
     <p>To update the name of a relationship, click <b>Edit</b> on their line</p>
 
     <h1>Current Relationships(max 20)</h1>
-    <table>
+    <table *ngFor="let relationship of Relationships" value=[relationship]>
+        
         <thead>
         <tr>
             <th>Name</th>
@@ -21,7 +22,7 @@
         </thead>
         <tbody>
             <tr>
-            <td></td>
+            <td>{{relationship.Name}}</td>
             <td></td>
             <td></td>
             <td></td>
