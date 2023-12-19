@@ -7,7 +7,7 @@
     <span class="example-spacer"></span>
       <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
       <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
-      <button mat-raised-button color="" (click)="logout()">LogOut</button> 
+      <button mat-raised-button color="" (click)="logout()"><a routerLink="/login">LogOut</a></button> 
       <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button> 
       <button mat-raised-button color="accent" >DCRR2024</button>
 
@@ -18,7 +18,7 @@
       <h1>Up coming weekends</h1>
       <div class="mycontainer">
         <div>
-          <h1><a href="#">New Survey</a></h1>
+          <h1><a routerLink="/weekendReport">New Survey</a></h1>
         </div>  
       <mat-list role="list" *ngFor="let survey of Surveys" value=[survey]>
         <div style="padding: 10px;">
