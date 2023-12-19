@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { WeekendReportComponent } from './weekend-report/weekend-report.component';
 import { CallRecordComponent } from './call-record/call-record.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'signIn', component:SignInComponent},
   {path:'weekendReport', component:WeekendReportComponent},
   {path:'callRecord', component:CallRecordComponent},
+  {path:'homepage', component:HomePageComponent}
   
 ];
 
