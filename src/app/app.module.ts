@@ -25,6 +25,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import {MatListModule} from '@angular/material/list';
+import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -34,7 +35,8 @@ import {MatListModule} from '@angular/material/list';
     LoginComponent,
     SignInComponent,
     SignOutComponent,
-    HomePageComponent
+    HomePageComponent,
+    ManageRelationshipsComponent
   ],
   imports: [
     BrowserModule,
