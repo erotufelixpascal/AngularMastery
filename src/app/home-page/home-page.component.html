@@ -7,9 +7,12 @@
     <span class="example-spacer"></span>
       <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
       <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
-      <button mat-raised-button color="" (click)="logout()"><a routerLink="/login">LogOut</a></button> 
+      <button mat-raised-button color="" (click)="logout()" routerLink="/login">LogOut</button> 
+      <span class="material-icons">person</span>
       <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button> 
       <button mat-raised-button color="accent" >DCRR2024</button>
+      
+      
 
   </mat-toolbar>
 
