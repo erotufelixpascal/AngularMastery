@@ -5,7 +5,7 @@
 </div>
 <form [formGroup]="weekendReportForm" (ngSubmit)="onFormSubmit($event)">
     <div mat-dialog-content>
-        <mat-form-field appearance="outline" style="width: 30%;">
+        <mat-form-field appearance="outline" style="width: 20%;">
             <mat-label>Select a Weekend</mat-label>
             <mat-select formControlName="weekendDate">          
             <mat-option value="option1">October 15, 2023 - October 18, 2023</mat-option>
@@ -44,9 +44,8 @@
         <button mat-raised-button color="primary">Edit</button>
     </div> -->
     <div mat-dialog-action class="form-container">
-        <button mat-raised-button color="primary" type="submit">Submit</button>
-        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="primary" type="submit">Save</button>
+        <button mat-raised-button color="warn" routerLink="/homepage"> Cancel</button>
         <button mat-raised-button color="primary">Edit</button>
     </div>
 </form>
-<h1>Testing new</h1>
