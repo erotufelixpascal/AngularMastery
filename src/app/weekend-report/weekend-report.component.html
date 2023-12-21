@@ -4,48 +4,49 @@
     <h1 style="color:red">Note: This form auto saves every 30 seconds</h1>
 </div>
 <form [formGroup]="weekendReportForm" (ngSubmit)="onFormSubmit($event)">
-<div mat-dialog-content>
-    <mat-form-field appearance="outline" style="width: 30%;">
-        <mat-label>Select a Weekend</mat-label>
-        <mat-select formControlName="weekendDate">          
-          <mat-option value="option1">October 15, 2023 - October 18, 2023</mat-option>
-          <mat-option value="option2">October 20, 2023 - October 23, 2023</mat-option>
-          <mat-option value="option3">November 20, 2023 - November 23, 2023</mat-option>
-        </mat-select>
-    </mat-form-field >
-    <label for=""><h1>What opened up fro you in this weekend- what did you discover about life, living or self?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionOne">
-    </mat-form-field>
-    <label for=""><h1>From this discovery what habitual ways of speaking, listening or acting are called into question for you? </h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionTwo">
-    </mat-form-field>
-    <label for=""><h1>In service of what possibilty are you now living your life? Who is listening? </h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionThree">
-    </mat-form-field>
-    <label for=""><h1>How do you see to impact the relationship with the people central to that possibilty realized? </h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionFour">
-    </mat-form-field>
-    <label for=""><h1>What is the practise you are choosing to impact those Relationships?</h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionFive">
-    </mat-form-field>
-    <label for=""><h1>When you are engaged in that practise, what could happen? For whom? </h1></label>
-    <mat-form-field class="example-full-width" appearance="outline">
-        <input matInput placeholder="" value="" formControlName="questionSix">
-    </mat-form-field>
-</div>
-<!-- <div  mat-dialog-actions >
-    <button mat-raised-button color="success" >Submit</button>
-    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
-    <button mat-raised-button color="primary">Edit</button>
-</div> -->
-<div mat-dialog-action class="form-container">
-    <button mat-raised-button color="primary" type="submit">Submit</button>
-    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
-    <button mat-raised-button color="primary">Edit</button>
-</div>
+    <div mat-dialog-content>
+        <mat-form-field appearance="outline" style="width: 30%;">
+            <mat-label>Select a Weekend</mat-label>
+            <mat-select formControlName="weekendDate">          
+            <mat-option value="option1">October 15, 2023 - October 18, 2023</mat-option>
+            <mat-option value="option2">October 20, 2023 - October 23, 2023</mat-option>
+            <mat-option value="option3">November 20, 2023 - November 23, 2023</mat-option>
+            </mat-select>
+        </mat-form-field >
+        <label for=""><h1>What opened up fro you in this weekend- what did you discover about life, living or self?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionOne">
+        </mat-form-field>
+        <label for=""><h1>From this discovery what habitual ways of speaking, listening or acting are called into question for you? </h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionTwo">
+        </mat-form-field>
+        <label for=""><h1>In service of what possibilty are you now living your life? Who is listening? </h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionThree">
+        </mat-form-field>
+        <label for=""><h1>How do you see to impact the relationship with the people central to that possibilty realized? </h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionFour">
+        </mat-form-field>
+        <label for=""><h1>What is the practise you are choosing to impact those Relationships?</h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionFive">
+        </mat-form-field>
+        <label for=""><h1>When you are engaged in that practise, what could happen? For whom? </h1></label>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="" value="" formControlName="questionSix">
+        </mat-form-field>
+    </div>
+    <!-- <div  mat-dialog-actions >
+        <button mat-raised-button color="success" >Submit</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="primary">Edit</button>
+    </div> -->
+    <div mat-dialog-action class="form-container">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="primary">Edit</button>
+    </div>
 </form>
+<h1>Testing new</h1>
