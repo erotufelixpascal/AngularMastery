@@ -38,8 +38,13 @@
         <input matInput placeholder="" value="" formControlName="questionSix">
     </mat-form-field>
 </div>
-<div  mat-dialog-actions >
-    <button mat-raised-button color="success">Save</button>
+<!-- <div  mat-dialog-actions >
+    <button mat-raised-button color="success" >Submit</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary">Edit</button>
+</div> -->
+<div mat-dialog-action class="form-container">
+    <button mat-raised-button color="primary" type="submit">Submit</button>
     <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
     <button mat-raised-button color="primary">Edit</button>
 </div>

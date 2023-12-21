@@ -26,6 +26,7 @@ import { SignOutComponent } from './sign-out/sign-out.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import {MatListModule} from '@angular/material/list';
 import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -55,7 +56,8 @@ import { ManageRelationshipsComponent } from './manage-relationships/manage-rela
     ReactiveFormsModule,
     FormsModule,
     MatTableModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

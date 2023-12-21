@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder } from '@angular/forms';
+import { DialogService } from '../services/dialog.service';
+import { DialogRef } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-weekend-report',
@@ -9,7 +11,10 @@ import { FormGroup,FormBuilder } from '@angular/forms';
 export class WeekendReportComponent implements OnInit {
   weekendReportForm!:FormGroup;
 
-  constructor(private fb1:FormBuilder){}
+  constructor(
+    private fb1:FormBuilder,
+    private _callService:DialogService, 
+    private _callRef: DialogRef<WeekendReportComponent>){}
 
   ngOnInit()  {
     this.weekendReportForm = this.fb1.group({
