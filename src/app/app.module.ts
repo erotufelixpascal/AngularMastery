@@ -27,6 +27,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import {MatListModule} from '@angular/material/list';
 import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignInComponent,
     SignOutComponent,
     HomePageComponent,
-    ManageRelationshipsComponent
+    ManageRelationshipsComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
