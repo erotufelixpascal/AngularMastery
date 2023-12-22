@@ -6,6 +6,7 @@ import { WeekendReportComponent } from './weekend-report/weekend-report.componen
 import { CallRecordComponent } from './call-record/call-record.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'callRecord', component:CallRecordComponent},
   {path:'homepage', component:HomePageComponent},
   {path:'managerelationships', component:ManageRelationshipsComponent},
+  {path:'adminpage', component:AdminPageComponent}
   
 ];
 
