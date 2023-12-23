@@ -1,88 +1,104 @@
 
 <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <!-- <mat-icon>supervised_user_circle</mat-icon> -->
-      <img src="assets/logo.png" alt="Icon" />
-    </button>
-    <span>Wisdom Course</span>
-    <span class="example-spacer"></span>
-      <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
-      <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
-      <button mat-raised-button color=""  routerLink="/login">LogOut</button> 
-      <span class="material-icons">person</span>
-      <!-- <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button>  -->
-      <h1 *ngFor="let username of users" value=[username]>{{username}}</h1>
-      <button mat-raised-button color="accent" >DCRR2024</button>
-      
-      
-
-  </mat-toolbar>
-
-  <div class="row">
-    <div class="column">
-      <h1>Up coming weekends</h1>
-      <div class="mycontainer">
-        <div>
-          <h1><a routerLink="/weekendReport">New Survey</a></h1>
-        </div>  
-      <!-- <mat-list role="list" *ngFor="let survey of Surveys" value=[survey]> -->
-        <div style="padding: 10px;">
-          <!-- <h2>{{survey}}</h2>   -->
-          <p>London is the capital city of England.</p>
-          <p>London has over 13 million inhabitants.</p>
-        </div>
-      <!-- </mat-list>       -->
-    </div>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <!-- <mat-icon>supervised_user_circle</mat-icon> -->
+    <img src="assets/logo.png" alt="Icon" />
+  </button>
+  <span>Wisdom Course</span>
+  <span class="example-spacer"></span>
+    <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
+    <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
+    <button mat-raised-button color=""  routerLink="/login">LogOut</button> 
+    <span class="material-icons">person</span>
+    <!-- <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button>  -->
+    <span class="material-icons">Messages</span>
+    <h1 *ngFor="let username of users" value=[username]>{{username}}</h1>      
+    <button mat-raised-button color="accent" >DCRR2024</button>
     
-  </div>
-  <div class="column">  
-    <h1> Relationships</h1>
-    <!-- <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
-      <mat-list-item role="listitem">{{relations}}</mat-list-item>   -->
-    <!-- </mat-list> -->
-    <a routerLink="/managerelationships">Manage your Relationships</a>
-  </div>
-  </div>
-  <!--SecondRow-->
-  <div class="row">
-    <div class="column">
-      <h1>Weekly Surveys</h1>
-      <div class="mycontainer">
-        <div>
-          <h1><a routerLink="/weekendReport">New Survey</a></h1>
-        </div>  
-      <!-- <mat-list role="list" *ngFor="let survey of Surveys" value=[survey]> -->
-        <div style="padding: 10px;">
-          <!-- <h2>{{survey}}</h2>   -->
-          <p>Kampala is the capital city of Uganda.</p>
-          <p>Kampala has over 13 million inhabitants.</p>
-        </div>
-      <!-- </mat-list>       -->
-    </div>
     
-  </div>
-  <div class="column">  
-    <h1>Additional Links</h1>
-    <!-- <mat-list role="list" *ngFor="let links of Links" value=[links]>  
-      <mat-list-item role="listitem"><a routerLink="">{{links}}</a></mat-list-item>     
-       
-    </mat-list> -->
-  </div>
-  </div>
-  <!--ThirdRow-->
-  <div class="row">
-    <div class="column">
-      <!-- <h1>Another one</h1> -->
-      
-  </div>
-  <div class="column">  
-    <h1>Files</h1>
-    <!-- <mat-list role="list" *ngFor="let file of Files" value=[file]>  
-      <mat-list-item role="listitem"><a routerLink="">{{file}}</a></mat-list-item>     
-       
-    </mat-list> -->
-  </div>
+
+</mat-toolbar>
+<h1 *ngFor="let username of users">Welcome back {{username}}!</h1>
+
+<div class="row">
+  <div class="column">
+    <h1>Weekly Survey</h1>
+    <div class="mycontainer">
+      <div>
+        <h1><a routerLink="/weekendReport">New Survey</a></h1>
+      </div>  
+    <mat-list >
+      <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
+      <div style="padding: 10px;">
+        <h2>survey</h2>  
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+    </mat-list>      
   </div>
   
-   
+</div>
+<div class="column">  
+  <h1> Upcoming events</h1>
+  <!-- <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
+    <mat-list-item role="listitem">{{relations}}</mat-list-item>  
+  </mat-list> -->
   
+</div>
+</div>
+<!--SecondRow-->
+<div class="row">
+  <div class="column">
+    
+    <div class="mycontainer">
+      <div>
+        <h1> Relationships</h1>
+        <p routerLink="/managerelationships">Manage your Relationships</p> 
+        <mat-list role="list" >
+          <!-- *ngFor="let relations of Relationships" value=[relations]        -->
+          <mat-list-item role="listitem">relations</mat-list-item>  
+        </mat-list>
+      </div>  
+    <mat-list >
+      <!-- <a routerLink="/managerelationships">Manage your Relationships</a> -->
+      <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
+      <div >
+                 
+        <h2>Charts</h2>
+        <img src="assets/chartnew.png" alt="Icon" />
+      </div>
+    </mat-list>      
+  </div>
+  
+</div>
+<div class="column">  
+  <h1>Additional Links</h1>
+  <mat-list role="list" >
+    <!-- *ngFor="let links of Links" value=[links]   -->
+    <mat-list-item role="listitem"><a routerLink="">links</a></mat-list-item>     
+     
+  </mat-list>
+</div>
+</div>
+<!--ThirdRow-->
+<div class="row">
+  <div class="column">
+      
+      <h1>Files</h1>
+      <mat-list role="list" >
+        <!-- *ngFor="let file of Files" value=[file]   -->
+        <mat-list-item role="listitem"><a routerLink="">file</a></mat-list-item>     
+         
+      </mat-list>
+    
+</div>
+<div class="column">  
+  <h1>Files</h1>
+  <!-- <mat-list role="list" *ngFor="let file of Files" value=[file]>  
+    <mat-list-item role="listitem"><a routerLink="">{{file}}</a></mat-list-item>     
+     
+  </mat-list> -->
+</div>
+</div>
+
+ 
