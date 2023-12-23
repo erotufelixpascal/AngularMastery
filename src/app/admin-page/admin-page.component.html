@@ -18,7 +18,7 @@
     
 
 </mat-toolbar>
-<h1 *ngFor="let username of users">Welcome back {{username}}!</h1>
+<p *ngFor="let username of users">Welcome back {{username}}!</p>
 
 <div class="row">
   <div class="column">
@@ -26,24 +26,27 @@
     <div class="mycontainer">
       <div>
         <h1><a routerLink="/weekendReport">Edit the weekly report</a></h1>
+        <p>Here you will find information regarding the course weekely report</p>
       </div>  
           <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
       <div >
-        <h1><a routerLink="/weekendReport">Edit the weekend report</a></h1>  
+        <h1><a routerLink="/weekendReport">Edit the weekend report</a></h1> 
+        <p>Here you will find information regarding the course weekend report</p> 
       </div>
       <div >
-        <h1><a routerLink="/weekendReport">Edit the Course</a></h1>  
+        <h1><a routerLink="/weekendReport">Edit the Course</a></h1> 
+        <p>Here you will find information regarding how to edit the course</p>  
       </div>   
   </div>
   
 </div>
-<div class="column">  
-  <h1> Upcoming events</h1>
-  <!-- <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
-    <mat-list-item role="listitem">{{relations}}</mat-list-item>  
-  </mat-list> -->
-  
-</div>
+  <div class="column">  
+    <h1> Upcoming events</h1>
+    <!-- <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
+      <mat-list-item role="listitem">{{relations}}</mat-list-item>  
+    </mat-list> -->
+    
+  </div>
 </div>
 <!--SecondRow-->
 <div class="row">
@@ -51,20 +54,14 @@
     
     <div class="mycontainer">
       <div>
-      <!-- <h1> Relationships</h1> -->
         <p routerLink="/managerelationships">Manage Course Partner/Participants</p> 
-        <mat-list role="list" >
-          <!-- *ngFor="let relations of Relationships" value=[relations]        -->
-          <mat-list-item role="listitem">relations</mat-list-item>  
-        </mat-list>
-      </div>  
-    <mat-list >
-      <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
+        <button color="primary" routerLink="/">View</button>
+      </div> 
       <div >                 
         <p>Charts</p>
         <img src="assets/chartnew.png" alt="Icon" />
       </div>
-    </mat-list>      
+        
   </div>
   
 </div>
