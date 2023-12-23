@@ -11,16 +11,18 @@
       <button mat-raised-button color=""  routerLink="/login">LogOut</button> 
       <span class="material-icons">person</span>
       <!-- <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button>  -->
-      <h1 *ngFor="let username of users" value=[username]>{{username}}</h1>
+      <span class="material-icons">Messages</span>
+      <h1 *ngFor="let username of users" value=[username]>{{username}}</h1>      
       <button mat-raised-button color="accent" >DCRR2024</button>
       
       
 
   </mat-toolbar>
+  <h1 *ngFor="let username of users">Welcome back {{username}}</h1>
 
   <div class="row">
     <div class="column">
-      <h1>Up coming weekends</h1>
+      <h1>Weekly Survey</h1>
       <div class="mycontainer">
         <div>
           <h1><a routerLink="/weekendReport">New Survey</a></h1>
@@ -46,16 +48,23 @@
   <!--SecondRow-->
   <div class="row">
     <div class="column">
-      <h1>Weekly Surveys</h1>
+      <h1>Relationships                  Edit</h1>
       <div class="mycontainer">
         <div>
-          <h1><a routerLink="/weekendReport">New Survey</a></h1>
+          <h1> Relationships</h1>
+          <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
+            <mat-list-item role="listitem">{{relations}}</mat-list-item>  
+          </mat-list>
         </div>  
-      <mat-list role="list" *ngFor="let survey of Surveys" value=[survey]>
+      <mat-list >
+        <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
         <div style="padding: 10px;">
-          <h2>{{survey}}</h2>  
+          <!-- <h2>{{survey}}</h2>  
           <p>Kampala is the capital city of Uganda.</p>
-          <p>Kampala has over 13 million inhabitants.</p>
+          <p>Kampala has over 13 million inhabitants.</p> -->
+          
+          <h2>Charts</h2>
+          <img src="assets/chartnew.png" alt="Icon" />
         </div>
       </mat-list>      
     </div>
@@ -72,15 +81,20 @@
   <!--ThirdRow-->
   <div class="row">
     <div class="column">
-      <!-- <h1>Another one</h1> -->
+        
+        <h1>Files</h1>
+        <mat-list role="list" *ngFor="let file of Files" value=[file]>  
+          <mat-list-item role="listitem"><a routerLink="">{{file}}</a></mat-list-item>     
+           
+        </mat-list>
       
   </div>
   <div class="column">  
     <h1>Files</h1>
-    <mat-list role="list" *ngFor="let file of Files" value=[file]>  
+    <!-- <mat-list role="list" *ngFor="let file of Files" value=[file]>  
       <mat-list-item role="listitem"><a routerLink="">{{file}}</a></mat-list-item>     
        
-    </mat-list>
+    </mat-list> -->
   </div>
   </div>
   
