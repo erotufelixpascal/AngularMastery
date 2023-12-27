@@ -10,6 +10,7 @@ import { DataServiceService } from '../data-service.service';
 })
 export class AdminPageComponent implements OnInit {
   users=["Felix P"];
+  data =["Felix P","Jane","Pascal","Thunder"];
 
   constructor (private dataService:DataServiceService){};
 
