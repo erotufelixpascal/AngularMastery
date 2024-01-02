@@ -1,7 +1,9 @@
 
 <body>
     <h1>Current Course Participants/ Partners</h1>
+    
 <div >
+    <button mat-raised-button color="accent" type="submit">Add</button><br><br>
     <table>
         <thead>
             <tr>
@@ -10,20 +12,20 @@
                 <th>Contact</th>
                 <th>Role</th>
                 <th>Assigned Course Partner</th>
-                <th>Active</th>
+                <th>Call scheduled</th>
                 <th>Status</th>
                 <th>Edit</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let people of People" value="people">
+                <td>{{people.firstName}}</td>
+                <td>{{people.lastName}}</td>
+                <td>{{people.Contact}}</td>
+                <td>{{people.Role}}</td>
+                <td>{{people.AssignedCoursePartner}}</td>
+                <td>{{people.Callscheduled}}</td>
+                <td>{{people.Status}}</td>
                 <td><button mat-raised-button color="primary" type="submit">Edit</button></td>
 
             </tr>
