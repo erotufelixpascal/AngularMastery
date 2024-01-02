@@ -6,12 +6,11 @@
   </button>
   <span>Wisdom Course</span>
   <span class="example-spacer"></span>
-    <!-- <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
-    <button mat-raised-button color="primary" (click)="openWeek()">Weekend Report</button> -->
+    
     <button mat-raised-button color=""  routerLink="/login">LogOut</button> 
     <span class="material-icons">person</span>
     <!-- <button mat-raised-button color="primary" *ngFor="let username of users" value=[username]>{{username}}</button>  -->
-    <span class="material-icons">Messages</span>
+    
     <h1 *ngFor="let username of users" value=[username]>{{username}}</h1>      
     <button mat-raised-button color="accent" >DCRR2024</button>
     
@@ -22,26 +21,28 @@
 
 <div class="row">
   <div class="column">
-    <h1>Add/Edit Course</h1>
+    <p><b>Add/Edit Course</b></p>
     <div class="mycontainer">
       <div>
-        <button routerLink="/weekendReport">Edit a Course</button>
+        
         <p>Here you will find information regarding how to edit the course</p>
+        <button routerLink="/weekendReport">Edit a Course</button>
       </div>  
           <!-- role="list" *ngFor="let survey of Surveys" value=[survey] -->
       <div >
-        <button routerLink="/weekendReport">Add a course</button>
+        
         <p>Here you will find information regarding how to add the course</p> 
+        <button routerLink="/weekendReport">Add a course</button>
       </div>
       <div >
-        <button routerLink="/weekendReport">Assign Course partners/Partcipants</button> 
-        <p>Here you will find information regarding how to Assign Course partners/Partcipants</p>  
+        <!-- <button routerLink="/weekendReport">Assign Course partners/Partcipants</button> 
+        <p>Here you will find information regarding how to Assign Course partners/Partcipants</p>   -->
       </div>   
   </div>
   
 </div>
   <div class="column">  
-    <h1> Upcoming events</h1>
+    <p><b>Upcoming events</b></p>
     <!-- <mat-list role="list" *ngFor="let relations of Relationships" value=[relations]>       
       <mat-list-item role="listitem">{{relations}}</mat-list-item>  
     </mat-list> -->
@@ -67,7 +68,7 @@
   
 </div>
 <div class="column">  
-  <h1>Additional Links</h1>
+  <p><b>Additional Links</b></p>
   <mat-list role="list" >
     <!-- *ngFor="let links of Links" value=[links]   -->
     <mat-list-item role="listitem"><a routerLink="">links</a></mat-list-item>     
@@ -79,11 +80,10 @@
 <div class="row">
   <div class="column">
       
-      <h1>Files</h1>
+      <p><b>Files</b></p>
       <mat-list role="list" >
         <!-- *ngFor="let file of Files" value=[file]   -->
         <mat-list-item role="listitem"><a routerLink="">file</a></mat-list-item>  
-        <!-- your-component.component.html -->
           <div *ngFor="let item of data">
             {{ item }}
           </div>   
@@ -92,7 +92,7 @@
     
 </div>
   <div class="column">  
-    <h1>TBD</h1>
+    <p><b>TBD</b></p>
     
   </div>
 </div>
