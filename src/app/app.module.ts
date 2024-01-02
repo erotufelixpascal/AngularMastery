@@ -28,6 +28,7 @@ import {MatListModule} from '@angular/material/list';
 import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { ListofPeopleComponent } from './listof-people/listof-people.component';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -39,7 +40,8 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     SignOutComponent,
     HomePageComponent,
     ManageRelationshipsComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    ListofPeopleComponent
   ],
   imports: [
     BrowserModule,
