@@ -23,12 +23,12 @@ import {MatTableModule} from '@angular/material/table';
 import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from './ParticipantComponent/home-page/home-page.component';
 import {MatListModule} from '@angular/material/list';
-import { ManageRelationshipsComponent } from './manage-relationships/manage-relationships.component';
+import { ManageRelationshipsComponent } from './ParticipantComponent/manage-relationships/manage-relationships.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AdminPageComponent } from './admin-page/admin-page.component';
-import { ListofPeopleComponent } from './listof-people/listof-people.component';
+import { AdminPageComponent } from './AdminComponent/admin-page/admin-page.component';
+import { ListofPeopleComponent } from './AdminComponent/listof-people/listof-people.component';
 @NgModule({
   declarations: [ 
     AppComponent,

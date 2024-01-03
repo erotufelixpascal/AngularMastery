@@ -9,7 +9,7 @@ import { SignOutComponent } from './sign-out/sign-out.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { Routes, RouterLink,RouterOutlet,RouterLinkActive  } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from './ParticipantComponent/home-page/home-page.component';
 
 
 
