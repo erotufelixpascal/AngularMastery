@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddListOfPeopleComponent } from '../add-list-of-people/add-list-of-people.component';
 
 @Component({
   selector: 'app-listof-people',
@@ -11,8 +13,10 @@ export class ListofPeopleComponent {
     {id:"2",firstName:"Felix",lastName:"Micheal",Contact:"+77-234-434",Role:"",AssignedCoursePartner:"",Callscheduled:"Yes",Status:"Not Active"},
   
   ];
+
+  constructor(private _dialog: MatDialog){}
   addPeople(){
-    console.log("")
+    this._dialog.open(AddListOfPeopleComponent)
   }
 
 }

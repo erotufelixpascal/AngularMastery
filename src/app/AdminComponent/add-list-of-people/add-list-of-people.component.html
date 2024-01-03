@@ -1,1 +1,47 @@
-<p>add-list-of-people works!</p>
+<h1 mat-dialog-title>Add People Form</h1>
+<div mat-dialog-content>
+    <!-- form creation -->
+    <form [formGroup] = "PeopleForm">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input formControlName="firstName" Input placeholder="fName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Select Course Participant</mat-label>
+            <input formControlName="participant" Input placeholder="participant">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Select Course Partner</mat-label>
+            <input formControlName="partner" Input placeholder="partner">
+        </mat-form-field>
+
+        
+        
+        <!-- <mat-form-field appearance="outline">  
+            <mat-label>Product Category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option value="Fruits">Fruits</mat-option>
+                <mat-option value="Vegetables">Vegetables</mat-option>
+                <mat-option value="Electronics">Electronics</mat-option>
+            </mat-select>
+        </mat-form-field>  -->
+        
+        <!-- <mat-radio-group formControlName="freshness" aria-label="Select an option" class="example-radio-group">
+            <mat-radio-button >
+                
+            </mat-radio-button>
+          </mat-radio-group>  -->
+        <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <input formControlName="price" matInput type="number" placeholder="Price" />       
+        </mat-form-field>  
+        <mat-form-field appearance="outline">
+            <mat-label>Comment</mat-label>
+            <textarea matInput formControlName="comment"></textarea>
+        </mat-form-field>   
+    </form>    
+</div>
+<div  mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="primary" (click)="addPeople()">Save</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+</div>
