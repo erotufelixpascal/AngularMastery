@@ -10,6 +10,9 @@ export class ListofPeopleComponent {
     {id:"1",firstName:"Jane",lastName:"Jory",Contact:"+1-234-434-984",Role:"Participant",AssignedCoursePartner:"",Callscheduled:"No",Status:"Active"},
     {id:"2",firstName:"Felix",lastName:"Micheal",Contact:"+77-234-434",Role:"",AssignedCoursePartner:"",Callscheduled:"Yes",Status:"Not Active"},
   
-  ]
+  ];
+  addPeople(){
+    console.log("")
+  }
 
 }
