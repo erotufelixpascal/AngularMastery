@@ -8,6 +8,7 @@ import { HomePageComponent } from './ParticipantComponent/home-page/home-page.co
 import { ManageRelationshipsComponent } from './ParticipantComponent/manage-relationships/manage-relationships.component';
 import { AdminPageComponent } from './AdminComponent/admin-page/admin-page.component';
 import { ListofPeopleComponent } from './AdminComponent/listof-people/listof-people.component';
+import { AddListOfPeopleComponent } from './AdminComponent/add-list-of-people/add-list-of-people.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'homepage', component:HomePageComponent},
   {path:'managerelationships', component:ManageRelationshipsComponent},
   {path:'adminpage', component:AdminPageComponent},
-  {path:'listofpeople', component:ListofPeopleComponent}
+  {path:'listofpeople', component:ListofPeopleComponent},
+  {path:'addlistofpeople', component:AddListOfPeopleComponent}
   
 ];
 
