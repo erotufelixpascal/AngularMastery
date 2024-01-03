@@ -13,6 +13,12 @@ export class AddListOfPeopleComponent implements OnInit {
   constructor(private _fb:FormBuilder){}
 
   ngOnInit(){
+    // Roles :Roles[] =[
+    //   {value:"Participant"},
+    //   {value:"Course Partner"}
+    // ];
+
+    
     this.PeopleForm = this._fb.group({
 
 

@@ -14,31 +14,29 @@
             <mat-label>Select Course Partner</mat-label>
             <input formControlName="partner" Input placeholder="partner">
         </mat-form-field>
-
-        
-        
-        <!-- <mat-form-field appearance="outline">  
-            <mat-label>Product Category</mat-label>
-            <mat-select formControlName="category" placeholder="Category">
-                <mat-option value="Fruits">Fruits</mat-option>
-                <mat-option value="Vegetables">Vegetables</mat-option>
-                <mat-option value="Electronics">Electronics</mat-option>
-            </mat-select>
-        </mat-form-field>  -->
-        
-        <!-- <mat-radio-group formControlName="freshness" aria-label="Select an option" class="example-radio-group">
-            <mat-radio-button >
-                
-            </mat-radio-button>
-          </mat-radio-group>  -->
         <mat-form-field appearance="outline">
-            <mat-label>Price</mat-label>
-            <input formControlName="price" matInput type="number" placeholder="Price" />       
-        </mat-form-field>  
-        <mat-form-field appearance="outline">
-            <mat-label>Comment</mat-label>
+            <mat-label>Contact</mat-label>
             <textarea matInput formControlName="comment"></textarea>
-        </mat-form-field>   
+        </mat-form-field> 
+        <mat-form-field>
+            <mat-label>Role</mat-label>
+            <!-- <mat-select>
+                @for (Role of Roles; track Role){
+                  <mat-option [value]="Roles.value">{{Roles.viewValue}}</mat-option>
+                }
+            </mat-select> -->
+        </mat-form-field>
+        <mat-label>Call Scheduled</mat-label>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+          </mat-radio-group>  
+        <mat-form-field appearance="outline">
+            <mat-label>Status</mat-label>
+            <textarea matInput formControlName="comment"></textarea>
+        </mat-form-field> 
+
+          
     </form>    
 </div>
 <div  mat-dialog-actions [align]="'end'">
