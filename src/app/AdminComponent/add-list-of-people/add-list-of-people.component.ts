@@ -20,6 +20,7 @@ export class AddListOfPeopleComponent implements OnInit {
 
     
     this.PeopleForm = this._fb.group({
+      width:'100%',
 
 
     })

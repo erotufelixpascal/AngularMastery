@@ -4,28 +4,29 @@
     <form [formGroup] = "PeopleForm">
         <mat-form-field appearance="outline">
             <mat-label>First Name</mat-label>
-            <input formControlName="firstName" Input placeholder="fName">
+            <input formControlName="firstName" Input placeholder="fName" />
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Select Course Participant</mat-label>
-            <input formControlName="participant" Input placeholder="participant">
+            <input formControlName="participant" Input placeholder="participant" />
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Select Course Partner</mat-label>
-            <input formControlName="partner" Input placeholder="partner">
+            <input formControlName="partner" Input placeholder="partner" />
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Contact</mat-label>
-            <textarea matInput formControlName="comment"></textarea>
+            <input formControlName="comment" Input placeholder="comment" />
+            <!-- <textarea matInput formControlName="comment"></textarea> -->
         </mat-form-field> 
-        <mat-form-field>
+        <!-- <mat-form-field>
             <mat-label>Role</mat-label>
-            <!-- <mat-select>
+            <mat-select>
                 @for (Role of Roles; track Role){
                   <mat-option [value]="Roles.value">{{Roles.viewValue}}</mat-option>
                 }
-            </mat-select> -->
-        </mat-form-field>
+            </mat-select> 
+        </mat-form-field> -->
         <mat-label>Call Scheduled</mat-label>
         <mat-radio-group aria-label="Select an option">
             <mat-radio-button value="1">Yes</mat-radio-button>
