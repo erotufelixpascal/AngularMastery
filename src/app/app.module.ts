@@ -29,6 +29,7 @@ import { ManageRelationshipsComponent } from './ParticipantComponent/manage-rela
 import { HttpClientModule } from '@angular/common/http';
 import { AdminPageComponent } from './AdminComponent/admin-page/admin-page.component';
 import { ListofPeopleComponent } from './AdminComponent/listof-people/listof-people.component';
+import { AddListOfPeopleComponent } from './AdminComponent/add-list-of-people/add-list-of-people.component';
 @NgModule({
   declarations: [ 
     AppComponent,
@@ -41,7 +42,8 @@ import { ListofPeopleComponent } from './AdminComponent/listof-people/listof-peo
     HomePageComponent,
     ManageRelationshipsComponent,
     AdminPageComponent,
-    ListofPeopleComponent
+    ListofPeopleComponent,
+    AddListOfPeopleComponent
   ],
   imports: [
     BrowserModule,
